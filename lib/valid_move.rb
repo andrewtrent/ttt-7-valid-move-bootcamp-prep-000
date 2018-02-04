@@ -5,7 +5,7 @@
 def position_taken?(board,index)
   if board[index] == nil
     return false
-  elsif board[index].strip.upcase != "X" || "O"
+  elsif board[index].strip == ""
     return false
   else
     return true
