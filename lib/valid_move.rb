@@ -5,7 +5,8 @@
 
 
 def position_taken?(board,index)
-  if board[index] == nil
+  if 0 <= index <= 8
+  elsif board[index] == nil
     return false
   elsif board[index].strip == ""
     return false
