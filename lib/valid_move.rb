@@ -19,15 +19,17 @@ def valid_move?(board,index)
   def position_taken?(board, index) 
     if board[index] == nil
         return false
-    if board[index].strip == ""
+    elsif board[index].strip == ""
         false
     else
         true
     end
   end 
+  
   if move_on_board?(board, index) && !position_taken(board, index)
     true
   else
     false
   end
+  
 end
