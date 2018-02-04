@@ -5,7 +5,7 @@
 
 
 def valid_move?(board,index)
-  if 0 <= index <= 8
+  if 0 <= index && <= 8
     if board[index] == nil
       return false
     elsif board[index].strip == ""
