@@ -19,6 +19,7 @@ def valid_move?(board,index)
   def position_taken?(board, index) 
     if board[index] == nil
         return false
+        # return statement included to shield strip method from nil
     elsif board[index].strip == ""
         false
     else
@@ -26,6 +27,7 @@ def valid_move?(board,index)
     end
   end 
   
+  # apply both tests and return the result
   if move_on_board?(board, index) && !position_taken?(board, index)
     true
   else
