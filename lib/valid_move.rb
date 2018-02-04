@@ -9,9 +9,9 @@ def valid_move?(board,index)
     if board[index] == nil
       return false
     elsif board[index].strip == ""
-      return true
+      true
     else
-      return false
+      false
     end
   else
     false
