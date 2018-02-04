@@ -5,15 +5,17 @@
 
 
 def valid_move?(board,index)
-  if board[index] == nil
-      return false
-  end
-  if index >= 0 && index <= 8
+  def position_taken?  
+    if board[index] == nil
+        return false
     if board[index].strip == ""
-      true
+        true
     else
-      false
+        false
     end
+  end  
+  if index >= 0 && index <= 8
+    true 
   else
     false
   end
