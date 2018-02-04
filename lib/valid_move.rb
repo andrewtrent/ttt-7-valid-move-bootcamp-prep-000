@@ -6,11 +6,14 @@
 
 def valid_move?(board,index)
   if 0 <= index <= 8
-  elsif board[index] == nil
-    return false
-  elsif board[index].strip == ""
-    return false
+    if board[index] == nil
+      return false
+    elsif board[index].strip == ""
+      return false
+    else
+      return true
+    end
   else
-    return true
+    false
   end
 end
